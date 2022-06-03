@@ -1,0 +1,88 @@
+.title{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    border: 2px solid black;
+    grid-template-areas: 
+    "one two three"
+    "four subjects five"
+    
+    ;
+    height: 100vh;
+    
+}
+.section-one{
+    border: 1px solid black;
+    padding: 20px;
+    grid-area: one;
+}
+.section-two{
+ border: 1px solid black;
+ text-align: justify;
+ grid-area: two;
+}
+.background{
+    width: 500px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+.breaking{
+    text-align: center;
+}
+.section-three{
+    border: 1px solid black;
+    text-align: center;
+    grid-area: three;
+}
+.section-four{
+    border: 1px solid black;
+    padding: 5px;
+    grid-area: four;
+}
+.subjects{
+    display: grid;
+
+    grid-area: subjects;
+    
+}
+#politics{
+    background-color: yellow;
+}
+.section-five{
+    display: grid;
+    grid-area: five;
+}
+#technology{
+    background-color:aqua ;
+}
+#locals{
+    background-color: blue;
+}
+#opinion{
+    background-color: aquamarine;
+}
+#sports{
+    background-color: brown;
+}
+.politics{
+    background-color: yellow;
+}
+.technology{
+    background-color: aqua;
+}
+.locals{
+    background-color: blue;
+}
+.opinion{
+    background-color: aquamarine;
+
+}
+.sports{
+    background-color: brown;
+}
