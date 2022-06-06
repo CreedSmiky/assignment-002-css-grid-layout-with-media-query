@@ -1,4 +1,4 @@
-.title{
+/*.title{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -27,8 +27,12 @@
  grid-area: two;
 }
 .background{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
 
 }
@@ -85,4 +89,49 @@
 }
 .sports{
     background-color: brown;
+}*/
+ @media( max-width:576px){ 
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+        border: 2px solid black;
+        grid-template-areas: 
+            "one"
+            "two""
+            "three"
+            "four"
+            "subjects"
+
+        
+        ;
+        height:150vh;
+ }
+ .background{
+     width:550px;
+ }
+
+ .title{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-one{
+    border: 1px solid black;
+    text-align: center;
+}
+.section-two{
+    border: 1px solid black;
+    text-align: center;
+}
+.section-three{
+    border:1px solid black;
+    text-align: center;
+}
+.section-four{
+    border: 1px solid black;
+    text-align: center;
+}
+.subjects{
+    
+}
 }
